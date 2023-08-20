@@ -1,0 +1,32 @@
+# Histogram ->
+
+
+import pandas as pd
+
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('C:\\Users\\ADMIN\\Downloads\\schoolimprovement2010grants.csv')
+
+plt.hist(df['Award_Amount'])
+plt.show()
+
+
+# Bar Chart ->
+
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data = pd.read_csv('C:\\Users\\ADMIN\\Downloads\\data.csv')
+
+df = pd.DataFrame(data)
+
+X = list(df.iloc[:, 0])
+Y = list(df.iloc[:, 1])
+
+plt.bar(X, Y, color='g')
+plt.title("Students over 11 Years")
+plt.xlabel("Years")
+plt.ylabel("Number of Students")
+
+plt.show()
